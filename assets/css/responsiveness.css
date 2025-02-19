@@ -61,7 +61,7 @@
   .close-sidebar {
     position: absolute;
     top: -70px;
-    right: 50px;
+    right: 45px;
     /* background: rgba(255, 255, 255, 0.1); */
     padding: 8px;
     border-radius: 50%;
@@ -140,7 +140,7 @@
 
 
   .deznav {
-    width: calc(var(--dz-sidebar-width) + 80px);
+    width: calc(var(--dz-sidebar-width) + 70px);
     padding-bottom: 0;
     height: 100%;
     top: 0 !important;
@@ -162,7 +162,7 @@
 
 
   .sidebar-footer {
-    width: calc(var(--dz-sidebar-width) + 80px);
+    width: calc(var(--dz-sidebar-width) + 70px);
     position: absolute;
     padding: 0px 0.5rem;
   }
