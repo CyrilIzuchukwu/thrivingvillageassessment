@@ -1,0 +1,473 @@
+@media only screen and (max-width: 767px) {
+
+  /* .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: none;
+  }
+
+  .menu-overlay.active {
+    display: block;
+  }
+
+  .hamburger {
+    cursor: pointer;
+  }
+
+  .hamburger.is-active i {
+    display: none;
+  }
+
+  .hamburger.is-active::after {
+    content: "✖";
+    font-size: 24px;
+    color: red;
+  } */
+
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .menu-overlay.active {
+    display: block;
+    opacity: 1;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .hamburger.is-active {
+    display: none;
+    /* Hide when sidebar is open */
+  }
+
+  .close-sidebar {
+    position: absolute;
+    top: -70px;
+    right: 50px;
+    /* background: rgba(255, 255, 255, 0.1); */
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  .close-sidebar.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .close-sidebar i {
+    font-size: 26px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    
+  }
+
+
+
+
+
+
+
+
+  .nav-header {
+    width: 100% !important;
+  }
+
+  .nav-header {
+    padding-left: 20px;
+  }
+
+  [data-nav-headerbg="color_3"] .nav-header {
+    background-color: #F3F3F3;
+    border-color: none;
+  }
+
+  .nav-header .brand-logo {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.125rem;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    font-weight: 700;
+    width: 100px;
+  }
+
+  .nav-control {
+    display: block !important;
+    right: 10px !important;
+
+  }
+
+  .mobile-right .icon {
+    position: absolute;
+    right: 70px !important;
+    top: 1px;
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .deznav {
+    width: calc(var(--dz-sidebar-width) + 80px);
+    padding-bottom: 0;
+    height: 100%;
+    top: 0 !important;
+    padding-top: 70px;
+    z-index: 999999;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    box-shadow: 0rem 0.9375rem 1.875rem 0rem rgba(0, 0, 0, 0.02);
+  }
+
+  .deznav-scroll {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  [data-sidebar-style="overlay"] .deznav .metismenu>li.mm-active>a i {
+    background: none;
+  }
+
+
+  .sidebar-footer {
+    width: calc(var(--dz-sidebar-width) + 80px);
+    position: absolute;
+    padding: 0px 0.5rem;
+  }
+
+
+
+  .content-body {
+    position: relative;
+    margin-top: var(--dz-header-height);
+    border-radius: 00px;
+    margin-right: 0px;
+    max-width: 100%;
+    min-height: 100% !important;
+    max-height: 100% !important;
+  }
+
+  .dashboard-header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 10px;
+    /* position: fixed; */
+  }
+
+  .dashboard-header .search-container .notification {
+    display: none !important;
+  }
+
+  .dashboard-header .search-container .search-box input {
+    width: 100%;
+  }
+
+  .dashboard-header .search-container {
+    width: 100%;
+  }
+
+  .dashboard-header .search-container form {
+    width: 100%;
+  }
+
+  .dashboard-header .search-container .search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 8px 15px;
+    height: 50px;
+  }
+
+  .section-header h2 {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+
+  [data-header-position="fixed"] .content-body {
+    /* padding-top: var(--dz-header-height); */
+    padding: 20px;
+    padding-inline: 15px;
+    padding-bottom: 60px;
+  }
+
+  .stats-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+    row-gap: 20px;
+  }
+
+
+
+  .top-score-stat .chart-bar {
+    margin: 26px 0px;
+  }
+
+  .top-score-stat .quiz-score-container .score {
+    font-weight: 500;
+    font-size: 40.35px;
+    line-height: 45.21px;
+  }
+
+
+
+  /* stats modal  */
+  .stats-modal {
+    max-width: 100%;
+    /* box-shadow: 0px 15px 15.9px 0px #00000040; */
+  }
+
+
+  .stats-card .role-play-stats .role-play-index .index .left h6 {
+    font-size: 14.37px;
+  }
+
+  .stats-card .role-play-stats .role-play-index .index .left span {
+    font-size: 14.37px;
+  }
+
+  .stats-card .role-play-stats .role-play-index .index .right {
+    font-size: 14.37px;
+  }
+
+  .stats-card .role-play-stats .role-play-index .index .right.color2 {
+    background: #FBDE9D;
+  }
+
+  .more-stats .middle-stat small {
+    margin-bottom: 10px;
+  }
+
+
+
+  .index-wrapper {
+    gap: 20px;
+  }
+
+  .ongoing-activities .sub-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+  }
+
+  .ongoing-activities .sub-text .active {
+    font-size: 17px;
+  }
+
+  .ongoing-activities .sub-text .modules {
+    font-size: 17px;
+  }
+
+
+
+
+  .ongoing-activities .activity-wrapper {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .ongoing-activities .activity-wrapper .activity-card {
+    min-width: 90%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  .ongoing-activities .activity-wrapper .activity-card {
+    padding: 6px;
+  }
+
+
+  .ongoing-activities .activity-wrapper .activity-card .image-container {
+    height: 260px;
+  }
+
+  .roleplay-wrapper {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .roleplay-wrapper .wrapper-content {
+    width: 90%;
+    min-width: 90%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding-bottom: 30px;
+  }
+
+  .roleplay-wrapper .wrapper-content .relative-image {
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+    z-index: 1;
+    object-fit: cover;
+  }
+
+
+  .roleplay-wrapper .wrapper-content .relative-image.purple {
+    object-position: bottom;
+  }
+
+  .roleplay-wrapper .wrapper-content .pattern {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: -170px;
+  }
+
+  .roleplay-wrapper .wrapper-content .pattern.purple {
+    box-shadow: 0px 22.12px 34.39px 0px #FC8C3C80;
+  }
+
+  .roleplay-wrapper .wrapper-content .pattern.green {
+    box-shadow: 0px 22.12px 44.65px 0px #51BD5880;
+  }
+
+  .relative-pattern {
+    position: relative;
+  }
+
+  .roleplay-wrapper .wrapper-content .text-content {
+    position: absolute;
+    z-index: 99;
+    top: -130px;
+    padding-inline: 20px;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .relative-pattern .text-content .top {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+  }
+
+  .relative-pattern .text-content .top .icon {
+    box-shadow: 0px 9.79px 24.48px 0px #00000080;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+  }
+
+  .relative-pattern .text-content .top .icon img {
+    width: 40px;
+  }
+
+  .relative-pattern .text-content .top h2 {
+    font-family: var(--font-family-main);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25.78px;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+
+
+  .relative-pattern .text-content .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .relative-pattern .text-content .bottom .timing {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .relative-pattern .text-content .bottom .timing p {
+    border-radius: 20px;
+    padding: 8.24px;
+    gap: 4px;
+    font-weight: 500;
+    font-size: 10px;
+  }
+
+  .relative-pattern .text-content .bottom .get-started a {
+    border-radius: 20;
+    padding: 10.24px;
+    padding-inline: 12px;
+    font-size: 12.58px;
+  }
+
+
+  .modules-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 50px;
+  }
+
+
+  .modules-wrapper .single-module {
+    width: 90%;
+    height: 380px;
+    min-width: 90%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    box-shadow: 0px 15.76px 49.26px 0px #c0bcf580;
+  }
+
+  .module-content {
+    padding: 27px 15px;
+  }
+
+
+  .module-content .top h2 {
+    font-size: 28.53px;
+  }
+
+  .module-content .top .sub-text {
+    width: 100%;
+  }
+
+}
