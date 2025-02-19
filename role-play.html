@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Thriving Village - User Dashboard</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Thriving Village">
+    <meta name="robots" content="index,">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="">
+
+    <link rel="stylesheet" href="assets/vendor/chartist/css/chartist.min.css">
+    <link href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link class="main-css" href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/responsiveness.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/icons/font-awesome-6/css/all.min.css">
+
+    <!-- remix icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  </head>
+
+  <body style="background: #fff !important;">
+
+
+
+    <!-- Preloader start -->
+    <div id="preloader">
+      <div class="sk-three-bounce">
+        <div class="sk-child sk-bounce1"></div>
+        <div class="sk-child sk-bounce2"></div>
+        <div class="sk-child sk-bounce3"></div>
+      </div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- Main wrapper start -->
+    <div id="main-wrapper">
+
+      <!-- Nav header start -->
+      <div class="nav-header">
+        <a href="" class="brand-logo">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+
+        <div class="nav-control mobile-right">
+          <div class="icon">
+            <a href="">
+              <i class="ri-notification-2-line"></i>
+            </a>
+          </div>
+          <div class="hamburger">
+            <i class="ri-dashboard-line"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Nav header end -->
+
+
+      <!-- Sidebar start -->
+      <div class="deznav">
+
+        <div class="deznav-scroll">
+          <ul class="metismenu" id="menu">
+
+
+            <li>
+              <a class="has-arrow ai-icon" href="index.html" aria-expanded="false">
+                <i>
+                  <img src="assets/icons/dashborad-icon.png" alt="">
+                </i>
+                <span class="nav-text">Dashboard</span>
+              </a>
+              <!-- <ul aria-expanded="false">
+                <li><a href="">Stage 1</a></li>
+              </ul> -->
+            </li>
+
+
+            <li><a href="role-play.html" class="ai-icon" aria-expanded="false">
+                <i>
+                  <img src="assets/icons/role-play-icon.png" alt="">
+                </i>
+                <span class="">Role play</span>
+              </a>
+            </li>
+
+            <li><a href="#" class="ai-icon" aria-expanded="false">
+                <i>
+                  <img src="assets/icons/power-skill-icon.png" alt="">
+                </i>
+                <span class="nav-text">Power skill</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="ai-icon" aria-expanded="false">
+                <i>
+                  <img src="assets/icons/ongoing-icon.png" alt="">
+                </i>
+                <span class="nav-text">Ongoing</span>
+              </a>
+            </li>
+          </ul>
+
+
+          <div class=" sidebar-footer">
+            <ul>
+              <li>
+                <a href="#" class="ai-icon" aria-expanded="false">
+                  <i>
+                    <img src="assets/icons/settings-icon.png" alt="">
+                  </i>
+                  <span class="nav-text">Settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="ai-icon" aria-expanded="false">
+                  <i>
+                    <img src="assets/icons/support-icon.png" alt="">
+                  </i>
+                  <span class="nav-text">Support</span>
+                </a>
+              </li>
+            </ul>
+            <div class="profile">
+              <img src="assets/images/profile/profile.jfif" alt="">
+              <div class="details">
+                <p class="name">Sara Adams</p>
+                <span class="email">Saraadamas@gmail.com</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+
+      <!-- Content body start -->
+      <div class="content-body" style="background: #F3F3F3F3;">
+
+        <!-- row -->
+        <div class="main-content">
+          <main class="index-wrapper">
+
+            <section class="">
+              <div class="section-header dashboard-header">
+                <h2>Role Play</h2>
+
+                <div class="search-container">
+                  <form action="">
+                    <div class="search-box">
+                      <i class="ri-search-line"></i>
+                      <input type="text" placeholder="Search for anything">
+                    </div>
+                  </form>
+                  <!-- notification for desktop  -->
+                  <div class="notification">
+                    <a href="">
+                      <i class="ri-notification-3-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="roleplay-wrapper case-page">
+                <div class="wrapper-content">
+                  <img src="assets/images/roleplay1.png" class="relative-image purple" alt="">
+                  <div class="relative-pattern">
+                    <img src="assets/images/shapes/shape1.png" class="pattern purple" alt="">
+
+                    <div class="text-content">
+                      <div class="top">
+                        <div class="icon">
+                          <img src="assets/images/icons/role1.png" alt="">
+                        </div>
+                        <h2>
+                          Difficult <br> conversations
+                        </h2>
+                      </div>
+                      <div class="bottom">
+                        <div class="timing">
+                          <p> <i class="ri-time-line"></i> 34:55 Mins</p>
+                          <p> <i class="ri-time-line"></i> 6 Chapters</p>
+                        </div>
+
+                        <div class="get-started">
+                          <a href="">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="wrapper-content">
+                  <img src="assets/images/roleplay2.png" class="relative-image green" alt="">
+                  <div class="relative-pattern">
+                    <img src="assets/images/shapes/shape2.png" class="pattern green" alt="">
+
+                    <div class="text-content">
+                      <div class="top">
+                        <div class="icon">
+                          <img src="assets/images/icons/role2.png" alt="">
+                        </div>
+                        <h2>
+                          Active <br> listening
+                        </h2>
+                      </div>
+                      <div class="bottom">
+                        <div class="timing">
+                          <p> <i class="ri-time-line"></i> 34:55 Mins</p>
+                          <p> <i class="ri-time-line"></i> 6 Chapters</p>
+                        </div>
+
+                        <div class="get-started green">
+                          <a href="">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="wrapper-content">
+                  <img src="assets/images/roleplay3.png" class="relative-image gold" alt="">
+                  <div class="relative-pattern">
+                    <img src="assets/images/shapes/shape3.png" class="pattern gold" alt="">
+
+                    <div class="text-content">
+                      <div class="top">
+                        <div class="icon">
+                          <img src="assets/images/icons/role3.png" alt="">
+                        </div>
+                        <h2>
+                          Active <br> listening
+                        </h2>
+                      </div>
+                      <div class="bottom">
+                        <div class="timing">
+                          <p> <i class="ri-time-line"></i> 34:55 Mins</p>
+                          <p> <i class="ri-time-line"></i> 6 Chapters</p>
+                        </div>
+
+                        <div class="get-started gold">
+                          <a href="">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="wrapper-content">
+                  <img src="assets/images/roleplay1.png" class="relative-image purple" alt="">
+                  <div class="relative-pattern">
+                    <img src="assets/images/shapes/shape1.png" class="pattern purple" alt="">
+
+                    <div class="text-content">
+                      <div class="top">
+                        <div class="icon">
+                          <img src="assets/images/icons/role1.png" alt="">
+                        </div>
+                        <h2>
+                          Difficult <br> conversations
+                        </h2>
+                      </div>
+                      <div class="bottom">
+                        <div class="timing">
+                          <p> <i class="ri-time-line"></i> 34:55 Mins</p>
+                          <p> <i class="ri-time-line"></i> 6 Chapters</p>
+                        </div>
+
+                        <div class="get-started">
+                          <a href="">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="wrapper-content">
+                  <img src="assets/images/roleplay2.png" class="relative-image green" alt="">
+                  <div class="relative-pattern">
+                    <img src="assets/images/shapes/shape2.png" class="pattern green" alt="">
+
+                    <div class="text-content">
+                      <div class="top">
+                        <div class="icon">
+                          <img src="assets/images/icons/role2.png" alt="">
+                        </div>
+                        <h2>
+                          Active <br> listening
+                        </h2>
+                      </div>
+                      <div class="bottom">
+                        <div class="timing">
+                          <p> <i class="ri-time-line"></i> 34:55 Mins</p>
+                          <p> <i class="ri-time-line"></i> 6 Chapters</p>
+                        </div>
+
+                        <div class="get-started green">
+                          <a href="">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="wrapper-content">
+                  <img src="assets/images/roleplay3.png" class="relative-image gold" alt="">
+                  <div class="relative-pattern">
+                    <img src="assets/images/shapes/shape3.png" class="pattern gold" alt="">
+
+                    <div class="text-content">
+                      <div class="top">
+                        <div class="icon">
+                          <img src="assets/images/icons/role3.png" alt="">
+                        </div>
+                        <h2>
+                          Active <br> listening
+                        </h2>
+                      </div>
+                      <div class="bottom">
+                        <div class="timing">
+                          <p> <i class="ri-time-line"></i> 34:55 Mins</p>
+                          <p> <i class="ri-time-line"></i> 6 Chapters</p>
+                        </div>
+
+                        <div class="get-started gold">
+                          <a href="">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="wrapper-content">
+                  <img src="assets/images/roleplay1.png" class="relative-image purple" alt="">
+                  <div class="relative-pattern">
+                    <img src="assets/images/shapes/shape1.png" class="pattern purple" alt="">
+
+                    <div class="text-content">
+                      <div class="top">
+                        <div class="icon">
+                          <img src="assets/images/icons/role1.png" alt="">
+                        </div>
+                        <h2>
+                          Difficult <br> conversations
+                        </h2>
+                      </div>
+                      <div class="bottom">
+                        <div class="timing">
+                          <p> <i class="ri-time-line"></i> 34:55 Mins</p>
+                          <p> <i class="ri-time-line"></i> 6 Chapters</p>
+                        </div>
+
+                        <div class="get-started">
+                          <a href="">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="wrapper-content">
+                  <img src="assets/images/roleplay2.png" class="relative-image green" alt="">
+                  <div class="relative-pattern">
+                    <img src="assets/images/shapes/shape2.png" class="pattern green" alt="">
+
+                    <div class="text-content">
+                      <div class="top">
+                        <div class="icon">
+                          <img src="assets/images/icons/role2.png" alt="">
+                        </div>
+                        <h2>
+                          Active <br> listening
+                        </h2>
+                      </div>
+                      <div class="bottom">
+                        <div class="timing">
+                          <p> <i class="ri-time-line"></i> 34:55 Mins</p>
+                          <p> <i class="ri-time-line"></i> 6 Chapters</p>
+                        </div>
+
+                        <div class="get-started green">
+                          <a href="">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="wrapper-content">
+                  <img src="assets/images/roleplay3.png" class="relative-image gold" alt="">
+                  <div class="relative-pattern">
+                    <img src="assets/images/shapes/shape3.png" class="pattern gold" alt="">
+
+                    <div class="text-content">
+                      <div class="top">
+                        <div class="icon">
+                          <img src="assets/images/icons/role3.png" alt="">
+                        </div>
+                        <h2>
+                          Active <br> listening
+                        </h2>
+                      </div>
+                      <div class="bottom">
+                        <div class="timing">
+                          <p> <i class="ri-time-line"></i> 34:55 Mins</p>
+                          <p> <i class="ri-time-line"></i> 6 Chapters</p>
+                        </div>
+
+                        <div class="get-started gold">
+                          <a href="">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+      <!-- Content body end -->
+    </div>
+    <!-- Main wrapper end -->
+
+
+    <!-- stats modal  -->
+    <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="statsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered stats-modal">
+        <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="info">
+              <img src="assets/images/icons/info.png" alt="">
+            </div>
+            <p>An average of your total average quiz scores so you keep tabs on your progress and advancements!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="assets/vendor/global/global.min.js"></script>
+    <script src="assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/dashboard/dashboard-1.js"></script>
+
+    <script src="assets/js/custom.min.js"></script>
+    <script src="assets/js/deznav-init.js"></script>
+
+    </script>
+
+    <div class="close-sidebar">
+      <i class="ri-close-line"></i>
+    </div>
+  </body>
+
+</html>

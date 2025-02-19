@@ -59,9 +59,9 @@
   }
 
   .close-sidebar {
-    position: absolute;
-    top: -70px;
-    right: 45px;
+    position: fixed;
+    top: 40px;
+    right: 30px;
     /* background: rgba(255, 255, 255, 0.1); */
     padding: 8px;
     border-radius: 50%;
@@ -469,5 +469,86 @@
   .module-content .top .sub-text {
     width: 100%;
   }
+
+
+
+
+
+
+
+
+
+    /* ROLE PLAY CASE  */
+    .roleplay-wrapper.case-page {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 20px;
+      row-gap: 20px;
+      margin-top: 20px;
+    }
+  
+    .roleplay-wrapper .wrapper-content {
+      width: 100%;
+      position: relative;
+      /* height: 600px; */
+  
+    }
+  
+    .roleplay-wrapper .wrapper-content .relative-image {
+      width: 100%;
+      border-radius: 20px;
+      height: 300px;
+      z-index: 1;
+      object-fit: cover;
+    }
+  
+    .roleplay-wrapper .wrapper-content .relative-image.purple {
+      object-position: bottom;
+    }
+  
+    .roleplay-wrapper .wrapper-content .pattern {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      margin-top: -150px;
+      height: 215px;
+    }
+  
+    .roleplay-wrapper .wrapper-content .pattern.purple {
+      box-shadow: 0px 22.12px 34.39px 0px #FC8C3C80;
+    }
+  
+    .roleplay-wrapper .wrapper-content .pattern.green {
+      box-shadow: 0px 22.12px 44.65px 0px #51BD5880;
+    }
+  
+    .roleplay-wrapper .wrapper-content .pattern.gold {
+      box-shadow: 0px 14.29px 28.84px 0px #5C51BD80;
+    }
+  
+    .relative-pattern {
+      position: relative;
+    }
+  
+    .roleplay-wrapper .wrapper-content .text-content {
+      position: absolute;
+      z-index: 99;
+      top: -100px;
+      padding-inline: 10px;
+      gap: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+  
+    .relative-pattern .text-content .top {
+      display: flex;
+      align-items: end;
+      gap: 10px;
+    }
+
 
 }
